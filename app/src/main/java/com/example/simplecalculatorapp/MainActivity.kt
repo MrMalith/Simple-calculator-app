@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val addBtn = findViewById<Button>(R.id.addButton)
         val absBtn =findViewById<Button>(R.id.absButton)
         val divBtn = findViewById<Button>(R.id.DivisionButton)
+        val mulBtn = findViewById<Button>(R.id.multiplicationButton)
         val resultTxtView = findViewById<TextView>(R.id.resultTextView)
 
         addBtn.setOnClickListener {
@@ -31,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         }
         divBtn.setOnClickListener {
             resultTxtView.text = "Division is "+(firstNum.text.toString().toInt()/secNum.text.toString().toInt()).toString()
+            Toast.makeText(this,resultTxtView.text, Toast.LENGTH_LONG).show()
+        }
+        mulBtn.setOnClickListener {
+            resultTxtView.text = "Multiplication is "+(firstNum.text.toString().toInt()*secNum.text.toString().toInt()).toString()
             Toast.makeText(this,resultTxtView.text, Toast.LENGTH_LONG).show()
         }
     }
