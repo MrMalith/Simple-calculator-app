@@ -36,7 +36,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="96dp"
             android:layout_marginRight="96dp"
-            android:text="+"
+            android:text="@string/add_values"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.914"
             app:layout_constraintStart_toEndOf="@+id/absButton"
@@ -60,7 +60,7 @@
             android:layout_marginStart="104dp"
             android:layout_marginLeft="104dp"
             android:layout_marginTop="32dp"
-            android:text="-"
+            android:text="@string/abs_values"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
 
@@ -71,7 +71,7 @@
             android:layout_marginStart="104dp"
             android:layout_marginLeft="104dp"
             android:layout_marginTop="32dp"
-            android:text="/"
+            android:text="@string/div_values"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/absButton" />
 
@@ -82,7 +82,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="96dp"
             android:layout_marginRight="96dp"
-            android:text="*"
+            android:text="@string/mul_values"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/addButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,8 @@
     <string name="enter_second_number">Enter second number</string>
     <string name="add">Add</string>
     <string name="result">Result</string>
+    <string name="add_values">+</string>
+    <string name="abs_values">-</string>
+    <string name="div_values">/</string>
+    <string name="mul_values">*</string>
 </resources>
