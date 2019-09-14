@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#B5C5C3"
         tools:context=".MainActivity">
+
     <EditText
+            android:id="@+id/firstNumEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#B0E2D4"
             android:ems="10"
-            android:id="@+id/firstNumEditText" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
             android:hint="@string/enter_first_number"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
+            android:id="@+id/secondNumEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:autofillHints=""
+            android:background="#B0E2D4"
             android:ems="10"
-            android:id="@+id/secondNumEditText" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/firstNumEditText" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
             android:hint="@string/enter_second_number"
-            android:autofillHints=""/>
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstNumEditText" />
 
     <Button
             android:id="@+id/addButton"
@@ -36,6 +50,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="96dp"
             android:layout_marginRight="96dp"
+            android:background="#6B272970"
             android:text="@string/add_values"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.914"
@@ -43,15 +58,21 @@
             app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
 
     <TextView
-            android:text="@string/result"
+            android:id="@+id/resultTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/resultTextView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintTop_toBottomOf="@+id/addButton"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="8dp" android:textSize="40sp"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/result"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addButton" />
 
     <Button
             android:id="@+id/absButton"
@@ -60,6 +81,7 @@
             android:layout_marginStart="104dp"
             android:layout_marginLeft="104dp"
             android:layout_marginTop="32dp"
+            android:background="#6B272970"
             android:text="@string/abs_values"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
@@ -71,6 +93,7 @@
             android:layout_marginStart="104dp"
             android:layout_marginLeft="104dp"
             android:layout_marginTop="32dp"
+            android:background="#6B272970"
             android:text="@string/div_values"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/absButton" />
@@ -82,6 +105,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="96dp"
             android:layout_marginRight="96dp"
+            android:background="#6B272970"
             android:text="@string/mul_values"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/addButton" />
