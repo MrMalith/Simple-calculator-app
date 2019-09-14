@@ -63,4 +63,26 @@
             android:text="-"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
+
+    <Button
+            android:id="@+id/DivisionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="32dp"
+            android:text="/"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/absButton" />
+
+    <Button
+            android:id="@+id/multiplicationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginRight="96dp"
+            android:text="*"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

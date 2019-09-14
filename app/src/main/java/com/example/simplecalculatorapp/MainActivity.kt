@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val secNum = findViewById<EditText>(R.id.secondNumEditText)
         val addBtn = findViewById<Button>(R.id.addButton)
         val absBtn =findViewById<Button>(R.id.absButton)
+        val divBtn = findViewById<Button>(R.id.DivisionButton)
         val resultTxtView = findViewById<TextView>(R.id.resultTextView)
 
         addBtn.setOnClickListener {
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
         }
         absBtn.setOnClickListener {
             resultTxtView.text = "Abstraction is "+(firstNum.text.toString().toInt()-secNum.text.toString().toInt()).toString()
+            Toast.makeText(this,resultTxtView.text, Toast.LENGTH_LONG).show()
+        }
+        divBtn.setOnClickListener {
+            resultTxtView.text = "Division is "+(firstNum.text.toString().toInt()/secNum.text.toString().toInt()).toString()
             Toast.makeText(this,resultTxtView.text, Toast.LENGTH_LONG).show()
         }
     }
